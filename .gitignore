@@ -1,2 +1,11 @@
 # macOS
 .DS_Store
+
+# vscode
+.vscode
+
+# JavaFX Run Script
+run_javafx.sh
+
+# Keep the example script
+!run_javafx_example.sh

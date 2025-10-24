@@ -60,4 +60,33 @@ By the end of the course, students will be able to:
 
 ---
 
+## 🛠️ JavaFX Development Tools
+
+This repository includes an example script to simplify JavaFX development and execution:
+
+**`run_javafx_example.sh`** - Example script to compile and run any JavaFX application
+
+To use this script:
+1. Copy `run_javafx_example.sh` to `run_javafx.sh`
+2. Update the `JAVAFX_PATH` variable in `run_javafx.sh` to point to your JavaFX SDK installation
+3. Make the script executable: `chmod +x run_javafx.sh`
+
+Usage:
+```bash
+./run_javafx.sh path/to/YourJavaFXApp.java
+```
+
+This script automatically handles:
+- Setting the correct JavaFX module path
+- Adding required JavaFX modules (javafx.controls, javafx.fxml)
+- Enabling native access to avoid warnings
+- Compiling and running the application
+
+For applications requiring additional JavaFX modules (e.g., javafx.media), specify them as a second parameter:
+```bash
+./run_javafx.sh path/to/YourJavaFXApp.java javafx.media
+```
+
+---
+
 </small>
