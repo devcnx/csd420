@@ -13,9 +13,9 @@
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.EOFException;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.File;
 
 /**
  * Reads and displays all data from the binary file created by WriteData.java.
@@ -35,7 +35,7 @@ public class ReadData {
             return;
         }
 
-        System.out.println("Reading all data from " + FILENAME + "...\n");
+        System.out.println("Reading all data from " + FILENAME + "...\n\n");
 
         // 1. Read data using a try-with-resources block.
         // We use DataInputStream to read primitive Java data types.
@@ -54,14 +54,14 @@ public class ReadData {
                 for (int i = 0; i < 5; i++) {
                     System.out.print(dis.readInt() + " ");
                 }
-                System.out.println(); // Newline
+                System.out.println(); 
 
                 // Read the 5 doubles
                 System.out.print("  Doubles:  ");
                 for (int i = 0; i < 5; i++) {
                     System.out.printf("%.2f ", dis.readDouble());
                 }
-                System.out.println("\n"); // Two newlines for spacing
+                System.out.println(" "); 
 
             } // Loop repeats until EOFException
 
