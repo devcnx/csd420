@@ -15,6 +15,7 @@ import java.io.DataInputStream;
 import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.File;
 
 /**
  * Reads and displays all data from the binary file created by WriteData.java.
@@ -26,6 +27,13 @@ public class ReadData {
         // The filename must match the one used in WriteData.java
         final String FILENAME = "PerryMorgan_datafile.dat";
         int dataSetCount = 0;
+
+        // Check if the file exists before attempting to read
+        File dataFile = new File(FILENAME);
+        if (!dataFile.exists()) {
+            System.out.println("No data file found. Please run WriteData.java first to create the data file.");
+            return;
+        }
 
         System.out.println("Reading all data from " + FILENAME + "...\n");
 
