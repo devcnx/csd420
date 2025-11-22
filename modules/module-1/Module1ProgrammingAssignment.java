@@ -37,7 +37,7 @@ import javafx.stage.Stage;
  * 
  * @author Brittaney Perry-Morgan
  * @version 1.0
- * @since Fall 2025`
+ * @since Fall 2025
  */
 public class Module1ProgrammingAssignment extends Application {
 
