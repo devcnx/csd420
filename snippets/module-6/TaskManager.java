@@ -1,5 +1,5 @@
 /*
- * file: modules/module-6/Module6ProgrammingAssignment.java
+ * file: modules/module-6/TaskManager.java
  *
  * Term: Fall 2025
  * 
