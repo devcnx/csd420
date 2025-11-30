@@ -1,0 +1,42 @@
+/* 
+file: modules/module-7/mystyle.css
+
+Term: Fall 2025
+
+Course: CSD420 Advanced Java Programming
+Instructor: Jack Lusby
+Institution: Bellevue University
+
+M7 Programming Assignment | Styling
+Author: Brittaney Perry-Morgan
+
+These are the necessary styles to satisfy the requirements of the M7
+Programming Assignment.
+*/
+
+.plain-circle {
+    -fx-fill: white;
+    fill: white;
+    -fx-stroke: black;
+    stroke: black;
+    -fx-stroke-width: 2px;
+    stroke-width: 2px;
+}
+
+#red-circle {
+    -fx-fill: red;
+    fill: red;
+    -fx-stroke: black;
+    stroke: black;
+    -fx-stroke-width: 2px;
+    stroke-width: 2px;
+}
+
+#green-circle {
+    -fx-fill: green;
+    fill: green;
+    -fx-stroke: black;
+    stroke: black;
+    -fx-stroke-width: 2px;
+    stroke-width: 2px;
+}
